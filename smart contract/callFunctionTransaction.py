@@ -12,7 +12,7 @@ private_key = '<put your private_key here>'
 nonce = w3.eth.getTransactionCount(myAdr)
 
 abi, bc = compileContract("solc-windows.exe","owner.sol")
-abi = json.loads(ABI)
+abi = json.loads(abi)
 myContract = w3.eth.contract(address="0x5F06b8d51Cd337d48913C365000CA3b1465dAbA0", abi=abi)
 
 transaction = {
