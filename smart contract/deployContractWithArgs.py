@@ -5,11 +5,11 @@ from web3.middleware import geth_poa_middleware
 from contract import genContract
 import json, sys
 
-w3 = Web3(Web3.HTTPProvider('https://rinkeby.infura.io/v3/4ae814529fcf43ddb3eec654d77c5578'))
+w3 = Web3(Web3.HTTPProvider('<put your infura_project_id here>'))
 w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 myAdr = '0xa5C64A61D225Bc5614a2CE5fAc81926438e93844'
-private_key = <put your private_key here>
+private_key = '<put your private_key here>'
 nonce = w3.eth.getTransactionCount(myAdr)
 
 transaction = {
