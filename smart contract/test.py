@@ -1,7 +1,7 @@
 from web3 import Web3
 from web3.auto.infura import w3
 
-w3 = Web3(Web3.HTTPProvider('https://rinkeby.infura.io/v3/4ae814529fcf43ddb3eec654d77c5578'))
+w3 = Web3(Web3.HTTPProvider('<put your infura_project_id here>'))
 LastBlock = w3.eth.blockNumber
 print(LastBlock)
 
