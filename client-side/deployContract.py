@@ -22,8 +22,9 @@ transaction = {
     'gas': 2000000,
     'gasPrice': 1000000000,
     'nonce': nonce,
-    'chainId': 4
+    'chainId': 4 
 }
+#modify the chain iD value respective to the test network
 
 deploy_txn = myContract.constructor().buildTransaction(transaction)
 signed_txn = w3.eth.account.sign_transaction(deploy_txn, private_key=private_key)
