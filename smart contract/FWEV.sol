@@ -43,6 +43,13 @@ contract Firewall_EV{
         EncVal[req_id] = enc_value;
         HashVal[req_id] = hash_value;
     }
-    
+        
+    function update_PK(string memory new_PK ) public {
+        require(
+            msg.sender == owner,
+            "Only owner can modify the public key!"
+        );
+        PK = new_PK;
+    }
     
 }
