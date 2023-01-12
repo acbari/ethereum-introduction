@@ -9,11 +9,11 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 myAdr = '<put your account address here>'
 private_key = '<put your private_key here>'
-nonce = w3.eth.getTransactionCount(myAdr)
+nonce = w3.eth.getTransactionCount(myAdr) #get the transaction count of our account
 
 abi = ABI
 myContract = w3.eth.contract(address="<put your deployed smart contract address here>", abi=abi)
 
-txn_receipt = myContract.functions.owner().call() #change owner() function with the one that you want call
+txn_receipt = myContract.functions.owner().call() #change owner() function with the getter function that you want call
 
 print(txn_receipt)
