@@ -14,6 +14,6 @@ nonce = w3.eth.getTransactionCount(myAdr) #get the transaction count of our acco
 abi = ABI
 myContract = w3.eth.contract(address="<put your deployed smart contract address here>", abi=abi)
 
-txn_receipt = myContract.functions.owner().call() #change owner() function with the getter function that you want call
+txn_receipt = myContract.functions.owner().call() #change owner() function with the getter_function/public_variable that you want call/read
 
 print(txn_receipt)
