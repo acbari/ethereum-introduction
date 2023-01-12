@@ -2,7 +2,7 @@ from web3 import Web3
 from web3.auto import w3
 from web3.middleware import geth_poa_middleware
 import json
-from fwev_abi import ABI   #fwev_abi.py has ABI variable that contain the ABI of the smart contract 
+from fwev_abi import ABI   #fwev_abi.py has ABI variable that contain the ABI string of the smart contract 
 
 w3 = Web3(Web3.HTTPProvider('<put your infura_project_id here>'))
 w3.middleware_onion.inject(geth_poa_middleware, layer=0)
