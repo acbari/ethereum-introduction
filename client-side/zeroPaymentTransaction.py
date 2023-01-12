@@ -24,7 +24,7 @@ transaction = {
 signed_tx = w3.eth.account.signTransaction(transaction, private_key)
 print("Sending transaction...")
 txn_hash = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
-print(txn_hash)
+print(txn_hash.hex())
 
 #buggy code
 #txn_receipt = w3.eth.waitForTransactionReceipt(txn_hash)
