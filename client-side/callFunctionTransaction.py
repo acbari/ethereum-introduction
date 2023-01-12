@@ -31,7 +31,7 @@ deploy_txn = myContract.functions.req_connection(123,pk2).buildTransaction(trans
 
 signed_txn = w3.eth.account.sign_transaction(deploy_txn, private_key=private_key)
 txn_hash = w3.eth.sendRawTransaction(signed_txn.rawTransaction)
-print(txn_hash)
+print(txn_hash.hex())
 
 #theese codes bellow generated error to INFURA API: 429 Client Error: Too Many Requests for url
 #we are missing a method to get the transaction status, whether it is succesfully recorded/failed?
