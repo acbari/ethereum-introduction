@@ -55,3 +55,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
+"""
+{"args": 
+
+{"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3",
+"counter": 1,
+"rid": 124},
+
+"event": "NewRequest",
+"logIndex": 3,
+"transactionIndex": 3,
+"transactionHash": "0x03a112ceccff8d362483f534e13445314535794cc038a048b2b79ddad6d71f6f",
+"address": "0x43f2Ac40b62Dff261d19144d3Cae5b30efE7ed92",
+"blockHash": "0x6ef2f57c161f774e0db374a85d96680f12354fd73568e0fbe1c8ba8bf630620d",
+"blockNumber": 2676636
+
+}
+"""
