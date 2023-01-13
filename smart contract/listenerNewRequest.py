@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
 {"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3",
 "counter": 1,
-"rid": 124},
+"rid": 124},                    
 
 "event": "NewRequest",
 "logIndex": 3,
@@ -73,4 +73,5 @@ if __name__ == "__main__":
 "blockNumber": 2676636
 
 }
+ 
 """
