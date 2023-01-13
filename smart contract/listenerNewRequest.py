@@ -1,4 +1,4 @@
-# import the following dependencies
+#ref: https://cryptomarketpool.com/how-to-listen-for-ethereum-events-using-web3-in-python/
 import json
 from web3 import Web3
 import asyncio
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     main()
 
     
-"""
+""" Result for the first transaction :
 {"args": 
 
 {"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3",
