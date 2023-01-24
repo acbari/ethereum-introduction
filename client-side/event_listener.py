@@ -6,11 +6,11 @@ from fwev_abi import ABI2 as ABI
 import json
 
 # add your blockchain connection information
-infura_url = 'https://sepolia.infura.io/v3/4ae814529fcf43ddb3eec654d77c5578'
+infura_url = 'infura project url'
 web3 = Web3(Web3.HTTPProvider(infura_url))
 
 # contract address and abi
-sc_adr = Web3.toChecksumAddress('0x43f2Ac40b62Dff261d19144d3Cae5b30efE7ed92')
+sc_adr = Web3.toChecksumAddress('contract address')
 sc_abi = ABI
 
 contract = web3.eth.contract(address=sc_adr, abi=sc_abi)
@@ -56,11 +56,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-	
-"""
-{"args": {"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3", "counter": 1, "rid": 124}, "event": "NewRequest", "logIndex": 3, "transactionIndex": 3, "transactionHash": "0x03a112ceccff8d362483f534e13445314535794cc038a048b2b79ddad6d71f6f", "address": "0x43f2Ac40b62Dff261d19144d3Cae5b30efE7ed92", "blockHash": "0x6ef2f57c161f774e0db374a85d96680f12354fd73568e0fbe1c8ba8bf630620d", "blockNumber": 2676636}
-
-{"args": {"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3", "counter": 1, "rid": 124}, "event": "NewRequest", "logIndex": 3, "transactionIndex": 3, "transactionHash": "0x03a112ceccff8d362483f534e13445314535794cc038a048b2b79ddad6d71f6f", "address": "0x43f2Ac40b62Dff261d19144d3Cae5b30efE7ed92", "blockHash": "0x6ef2f57c161f774e0db374a85d96680f12354fd73568e0fbe1c8ba8bf630620d", "blockNumber": 2676636}
-{"args": {"requester": "0x5D45d875FD3A150f38241B8B6A573b0C40C646d3", "counter": 2, "rid": 125}, "event": "NewRequest", "logIndex": 4, "transactionIndex": 4, "transactionHash": "0x90f5937e4aaa7b76eecd2860474811be27837b54171fae91c6ba1527099ba5ee", "address": "0x43f2Ac40b62Dff261d19144d3Cae5b30efE7ed92", "blockHash": "0x48a4dab7ebf1158dea4e4be702acddb8c5bee3b6999c20f73b267e756f8001ca", "blockNumber": 2676640}
-
-"""
