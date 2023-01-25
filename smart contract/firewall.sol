@@ -44,6 +44,11 @@ contract Firewall_EV{
             msg.sender == Owner,
             "Only owner can grant the connection!"
         );
+        require(
+            req_counter <= ctr && req_counter > 0,
+            "Index out of range"
+        );
+
         Enc_Val[req_counter] = enc_value;
        
         emit NewReply(req_counter, enc_value);
@@ -55,14 +60,6 @@ contract Firewall_EV{
             "Only owner can modify the public key!"
         );
         PK = new_PK;
-    }
-    
-    function get_Req_Adr(uint index) public view returns (address account_){
-        require(
-            index <= ctr && index > 0,
-            "Index out of range"
-        );
-        account_ = Req_ID[index];
     }
 
 }
