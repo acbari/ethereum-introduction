@@ -266,12 +266,12 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "req_counter",
+				"name": "req_number",
 				"type": "uint256"
 			},
 			{
 				"internalType": "string",
-				"name": "enc_value",
+				"name": "SecretData",
 				"type": "string"
 			}
 		],
