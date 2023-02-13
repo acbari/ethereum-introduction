@@ -22,7 +22,7 @@ contract BlockMiWall{
     mapping(uint => string) public Rep_Data;      //Request_number: secret( IP, Port, EV_secretnumber)
     
     //Event management
-    event NewRequest(uint indexed number, address indexed requester, string pin, string pk);
+    event NewRequest(uint indexed number, address indexed requester, string Req_Data, string pk);
     event NewReply(uint indexed number, string Rep_Data);
 
     constructor(string memory CarNickName, uint ev_id, string memory PK_EV) {
