@@ -49,19 +49,19 @@ contract BlockMiWall{
         emit NewRequest(ctr_, msg.sender, SecretData, req_PK);
     }
 
-    function rep_connection(uint req_counter, string memory enc_value ) public {
+    function rep_connection(uint req_number, string memory SecretData ) public {
         require(
             msg.sender == Owner,
             "Only owner can grant the connection!"
         );
         require(
-            req_counter <= number && req_counter > 0,
+            req_number <= number && req_number > 0,
             "Index out of range"
         );
 
-        Rep_Data[req_counter] = enc_value;
+        Rep_Data[req_number] = SecretData;
        
-        emit NewReply(req_counter, enc_value);
+        emit NewReply(req_number, SecretData);
     }
     
     function update_PK(string memory new_PK ) public {
